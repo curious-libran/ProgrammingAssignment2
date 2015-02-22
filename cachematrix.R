@@ -1,10 +1,12 @@
 ## There are two functions makeCacheMatrix() & CacheSolve()
-## "makeCacheMatrix()" uses the concept of nested functions wherein function are defined within the
-## function. It has 1 formal argument "x" which is of class type "matrix()", i.e it takes a 
-## matrix as user input and creates a "cache object m" intializing it to NULL. 
-## Purpose of m is to store the value of matrix inverse once calculated. Rerunning the script on same matrix 
+## "makeCacheMatrix()" 
+##  It has 1 formal argument "x" which is of class type "matrix()" i.e input to the function.  
+## It also has a variable "m" i.e the cache object
+
+## Purpose of m - is to store the value of matrix inverse once calculated. Rerunning the script on same matrix 
 ## will be faster next time because, it'll simply retrieve the inverse from "m" thus, saving on computation time
-## "makeCacheMatrix" has 4 functions within 
+
+## "makeCacheMatrix" has 4 functions nested within it 
 ##  set(),get() used to set & get matrix and setmatrix() & getmatrix() to set & get inverse of matrix.
 ## 1.) set()- it uses a super assignment operator to set  "x" to a new user inputted
 ## matrix "y". It also sets the cache object to NULL to reset it.
